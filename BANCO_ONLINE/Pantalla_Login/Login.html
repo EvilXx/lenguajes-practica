@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BANCO ESCOLAPIOS</title>
+
+    <!--FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="Elementos_Estaticos/Css/Login.css">
+  </head>
+
+  <body>
+    <!--Encapsulado del contenedor principal-->
+    <div class="modal-dialog">
+      <div class="col-sm-8 main-section">
+        <h1>BIENVENIDO</h1>
+
+        <!--Contenido del contenedor principal-->
+        <div class="modal-content">
+          <br><br><br>
+
+          <!--Insertamos Logo de nuestro COLE-BANCO-->
+          <div class="col-12 user-img">
+              <img src="Elementos_Estaticos/Imagenes/Escolapios.jpg"/>
+          </div>
+
+          <!--FORMULARIO DE LOGIN-->
+          <form class="col-12" action="Login.php" method="post">
+              <!--Campo para introducir el NOMBRE DE USUARIO-->
+              <div class="form-group" id="user-group">
+                  <input type="text" class="form-control" placeholder="Nombre de usuario" name="userName" required autocomplete="off"/>
+              </div>
+              <!--Campo para introducir la CONTRASEÑA-->
+              <div class="form-group" id="contrasena-group">
+                  <input type="password" class="form-control" placeholder="Contrasena" name="password" required autocomplete="off"/>
+              </div>
+              <!--Botón de acceso a la aplicación (Loguearse)-->
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-sign-in-alt"></i> ENTRAR
+              </button>
+          </form>
+
+          <!--Botón de acceso a la Página de Registro de usuario-->
+          <div class="col-12 forgot">
+              <a href="../Pantalla_Registro/registro.html">Soy nuevo usuario, quiero REGISTRARME</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
